@@ -1,18 +1,38 @@
 
-let nombre = prompt ("¿Cual es tu nombre?")
+const nombrePersona1 = "martina"
+const nombrePersona2 = "melina"
+const nombrePersona3 = "victoria"
 
-console.log ("¡Hola Martina, bienvenida!")
+let nombreDinamico = prompt("¿Cual es tu nombre?")
 
-let edad = Number (prompt ("¿Que edad tienes?") );
+nombreDinamico = nombreDinamico.toLowerCase()
 
-const numero = 10;
 
-console.log (edad + numero)
-console.log (edad - numero)
-console.log (edad / numero)
-console.log (edad * numero)
+if(nombreDinamico === nombrePersona1 || nombreDinamico === nombrePersona2 || nombreDinamico === nombrePersona3) {
+    console.log(`¡Hola ${nombreDinamico}, bienvenida al Bar!`)
 
-let mensaje = prompt ("¿Que mensaje quieres dejar?")
+    let reserva = Number(prompt("¿Cual es tu numero de reserva?"))
+
+    if(reserva < 3) {
+        console.log ("Correcto, tenes tu mesa en el piso 1")
+    } else if (reserva > 4){
+        console.log("Correcto, tenes tu mesa en el piso 2")
+    } else if (reserva == 4){
+        console.log("No tenemos ese numero de reserva")
+    } else {
+     console.log("Espera que te buscamos una mesa")
+    }
+
+ } else{ 
+        console.log(`No podes ingresar ${nombreDinamico}, no te tengo en la lista!`)
+}
+
+
+
+
+
+
+
 
 
 
