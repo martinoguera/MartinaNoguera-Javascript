@@ -1,37 +1,42 @@
 
-let nombreAlumno = prompt ("Cual es tu nombre");
+/// Calculadora
 
-nombreAlumno = nombreAlumno.toLowerCase()
+solicitarNumero()
 
-console.log (`¡Hola ${nombreAlumno}, este es tu promedio!`);
+function solicitarNumero (){
+    let num1 = Number(prompt("Ingrese un numero"));
+    let num2 = Number(prompt("Ingrese un segundo numero"));
+    let operador = prompt("Ingresa la operacion que desea realizar");
 
-let num1 = Number(prompt("Ingrese tu nota parcial"));
-let num2 = Number(prompt("Ingrese tu nota parcial recuperatorio"));
+    calcular(num1, num2, operador);
 
-let num3 = calcular(num1, num2);
-let num4 = calcular(num1, num2);
-
- let promedio1 = promedio(num3);
- let promedio2 = promedio(num4);
-
- console.log(promedio1, promedio2);
-
-function promedio (a) {
-
-    let promedio = a/2;
-    return promedio;
 }
 
+function calcular (a, b, c){
 
-function calcular (a, b) {
+    let res;
 
-    let resultado = a+b;
-    return resultado;
+    switch(c){
+        case "+" : res= a+b;
+        break;
+        case "-" : res= a-b;
+        break;
+        case "*" : res= a*b;
+        break;
+        case "/" : res= a/b;
+        break;
+        default : res= "La operacion que desea realizar no es correcta.";
+        break;
+    }
+
+    resultado(res);
 }
 
+function resultado (a) {
 
-
-
+    console.log(a);
+    alert(a);
+}
 
 
 
