@@ -1,0 +1,57 @@
+// HEADER
+
+.imagenHeader{
+    width: 100%;
+}
+
+.bi-cart2{ //icono de carrito
+    margin-top: -110px;
+}
+
+.d-flex{ //buscador
+   margin-left: 100px;
+   margin-top: -130px;
+}
+
+.bi-person-fill{
+    margin-top: -180px;
+}
+
+// BODY
+
+
+h1{
+    text-align: center;
+    color: black;
+    font-family: fantasy;
+    font-size: 60px;
+}
+
+.parrafoConteiner{
+    background-color: black;
+    padding-bottom: 70px;
+    padding-top: 20px;
+    margin-top: -10px;
+
+}
+
+.parrafo{
+    color:green;
+    margin-top: -40px;
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+.bedidas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bebidas1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
