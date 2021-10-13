@@ -37,43 +37,54 @@
               </svg>
         </div>
     </nav>
-
-
         
             <h1>DELIVERY DE BEBIDAS</h1>
 
 
-
-        <section class="bebidas"> 
+<!-- FOTOS BEBIDAS -->
+        <section class="bebidas">  
 
             <div class="bebidas1">
-                
+                <div class="conteiner1">
                 <img src="./imagenes/vodka.png" alt="vodka" height="300px" width="300px">
-                <img src="./imagenes/fernet.PNG" alt="" height="300px" width="300px">
-                <img src="./imagenes/bacardi.PNG" alt="" height="300px" width="300px">
-                 
-            </div>
+                <div class="conteiner2 vodka">
+                   <div class="titulo"> VODKA 750cc</div>
+                   <div class="precio"> $499</div>
+                   <button class="boton">AGREGAR</button>
+                </div>
+             </div>
+                
+             <img src="./imagenes/fernet.PNG" alt="vodka" height="300px" width="300px">
+             <div class="conteiner2 fernet">
+                <div class="titulo"> VODKA 750cc</div>
+                <div class="precio"> $499</div>
+                <button class="boton">AGREGAR</button>
+             </div>
+          </div>
+
             <div class="bebidas1">
                 <img src="./imagenes/brahma.PNG" alt="vodka" height="300px" width="300px">
                 <img src="./imagenes/corona.PNG" alt="vodka" height="300px" width="300px">
                 <img src="./imagenes/hein.PNG" alt="vodka" height="300px" width="300px">
 
             </div>
-            <div class="bebidas1">
+            <!-- <div class="bebidas1">
                 <img src="./imagenes/jager.PNG" alt="vodka" height="300px" width="300px">
                 <img src="./imagenes/gin.PNG" alt="vodka" height="300px" width="300px">
                 <img src="./imagenes/campari.JPG" alt="vodka" height="300px" width="300px">
 
-            </div>
+            </div> -->
         </section>
 
-        <section class="conteiner">
+
+        <!-- SECCION SUBTOTAL -->
+        <section class="conteiner"> 
         <div class="row justify-content-center bebidas2">
             <div class="col-4 nombre1">
               Seleccione su bebida:
             </div>
             <div class="col-4">
-              <select name="producto" id="bebidas">
+              <select name="producto" id="bebida">
             <option value="1">Gin Bombay Sapphire 750cc</option>
             <option value="2">fernet Branca 750cc</option>
             <option value="3">Vodka Smirnof 700cc</option>
@@ -100,7 +111,7 @@
              Precio:
             </div>
             <div class="col-4">
-                 <input type="text" id="precio"  disabled>
+                 <input type="text" id="precio"  >
             </div>
 
             <div class="row justify-content-center">
@@ -108,14 +119,16 @@
              Subtotal:
                 </div>
             <div class="col-4">
-                  <input type="text" id="subtotal"  disabled>
+                  <input type="text" id="subtotal"  >
                  </div>
 
-             <div class="row justify-content-center">
-                 <div class="col-4">
-                        
+                 <!-- espacio en blanco -->
+             <div class="row justify-content-center"> 
+                 <div class="col-4"> 
                  </div>
-             <div class="col-4">
+
+                 <!-- BOTON AGREGAR -->
+             <div class="col-4" id="btn">
                      <button>AGREGAR</button>
              </div>
             </section>

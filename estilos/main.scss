@@ -20,7 +20,7 @@
 
 // BODY
 
-h1{
+h1{ 
     text-align: center;
     color: black;
     font-family: fantasy;
@@ -28,13 +28,6 @@ h1{
     margin-bottom: 100px;
 }
 
-// .parrafo{
-//     color:green;
-//     margin-top: -40px;
-//     text-align: center;
-//     font-size: 30px;
-//     font-family: fantasy;
-// }
 
 .bebidas{
     background-color: black;
@@ -49,6 +42,7 @@ h1{
     margin-bottom: 100px;
     border-color: blueviolet;
     border-style: solid;
+    margin-left: -200px;
 }
 
 // SUBTOTAL
@@ -64,4 +58,44 @@ h1{
     font-size: 30px;
     font-family: fantasy;
     letter-spacing: 3px;
+}
+
+.conteiner1{
+    display: flex;
+    flex-direction: row;
+}
+
+.conteiner2{
+    display: flex;
+    flex-direction: column;
+    // margin-top: 100px;
+    // margin-left: -90px;
+}
+
+
+.titulo{
+    color:darkgray;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.precio{
+    color: chartreuse;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.boton{
+    background-color: blueviolet;
+    color: white;
+    padding: 8px 10px 8px 10px;
+    margin-top: 15px;
+}
+
+.fernet{
+    margin-left: 150px;
+}
+
+.vodka{
+    
 }
