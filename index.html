@@ -79,10 +79,14 @@
 
         <!-- SECCION SUBTOTAL -->
         <section class="conteiner"> 
+
+        <form action="" method="">
+
         <div class="row justify-content-center bebidas2">
             <div class="col-4 nombre1">
               Seleccione su bebida:
             </div>
+
             <div class="col-4">
               <select name="producto" id="bebida">
             <option value="1">Gin Bombay Sapphire 750cc</option>
@@ -96,30 +100,33 @@
             <option value="9">Campari Cynar 750cc</option>
             </select>
             </div>
-          </div>
+        </div>
 
           <div class="row justify-content-center">
             <div class="col-4 nombre1">
             Cantidad:
             </div>
+
             <div class="col-4">
-                <input type="text" id="cantidad">
+                <input type="number" id="cantidad">
             </div>
 
             <div class="row justify-content-center">
             <div class="col-4 nombre1">
              Precio:
             </div>
+
             <div class="col-4">
-                 <input type="text" id="precio"  >
+                 <input type="number" id="precio"  >
             </div>
 
             <div class="row justify-content-center">
             <div class="col-4 nombre1">
              Subtotal:
                 </div>
+
             <div class="col-4">
-                  <input type="text" id="subtotal"  >
+                  <input type="number" id="subtotal"  >
                  </div>
 
                  <!-- espacio en blanco -->
@@ -127,12 +134,14 @@
                  <div class="col-4"> 
                  </div>
 
+                 
                  <!-- BOTON AGREGAR -->
-             <div class="col-4" id="btn">
+                 <div class="col-4" id="btn">
                      <button>AGREGAR</button>
-             </div>
+                    </div>
+                    
+                </form>
             </section>
-
 
 
 <script src="./app.js"></script>
