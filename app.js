@@ -8,52 +8,69 @@
 // }
 
 
-// DOM
+class Productos {
 
-// class p {
-//     constructor(bebida, cantidad, precio, subtotal){
-//         this.bebida = bebida;
-//         this.cantidad = cantidad;
-//         this.precio = precio;
-//         this.subtotal = subtotal;
-//     }
-// }
+    constructor({
+        bebida,
+        cantidad,
+        precio, 
+        subtotal
+    }){
+        this.bebida = bebida;
+        this.cantidad = cantidad;
+        this.precio = precio;
+        this.subtotal = subtotal
+    }
+}
 
-// const guardarDatos = () => {
+let listaBebidas = [];
 
-// const producto = new p({
 
-//     bebida : document.getElementById("bebida").value, 
-//     cantidad : document.getElementById("cantidad").value,
-//     precio : document.getElementById("precio").value,
-//     subtotal : document.getElementById("subtotal").value,
+const crearCarrito = () => {
 
-// })
-//     console.log(document.getElementById("bebida").value)
-//     console.log(document.getElementById("cantidad").value)
-//     console.log(document.getElementById("precio").value)
-//     console.log(document.getElementById("subtotal").value)
+    const bebidas = new Productos({
+        bebida : document.getElementById("bebida"),
+        cantidad : document.getElementById("cantidad").value,
+        precio : document.getElementById("precio").value,
+        subtotal : document.getElementById("subtotal").value,
+    })
 
-//     return producto
-// }
+    console.log(bebidas)
 
-// document.getElementById("btn").addEventListener("click", () => {
-//     guardarDatos()
-// })
+    return bebidas
+}
 
-// EVENTOS
+const agregarBebida = (lista) => {
+    lista.push(crearCarrito)
+    return lista
+}
+  
 
-const boton = document.getElementById("btn")
-console.log(boton)
+const guardarEnBaseDeDatos = () =>{
 
-document.getElementById("btn").addEventListener("mouseup", () => {
-    console.log("Cantidad de veces que clikeaste para comprar")
+   listaBebidas = verificarStorage()
+    localStorage.setItem("listaBebidas", JSON.stringify(listaBebidas))
+}
+
+const verificarStorage = () =>{
+
+let dato;
+
+    if(localStorage.getItem("listaBebidas") != null){
+        dato = agregarBebida(JSON.parse(localStorage.getItem("listaBebidas")))
+         return dato
+    }else{
+        agregarBebida(listaBebidas)
+        dato = listaBebidas
+        return dato
+    }
+}
+
+document.getElementById("btn").addEventListener("click", (e) => { e.preventDefault()
+    crearCarrito()
+    guardarEnBaseDeDatos()
+
 })
 
-const input = document.getElementById("btn")
+imprimirDatos()
 
-boton.addEventListener("click", (e) => {
-    e.preventDeFault()
-
-    console.log(input.value)
-})
