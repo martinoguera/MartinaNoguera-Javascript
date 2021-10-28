@@ -72,5 +72,37 @@ document.getElementById("btn").addEventListener("click", (e) => { e.preventDefau
 
 })
 
-imprimirDatos()
+// imprimirDatos()
 
+// JQUERY
+
+$(() =>{
+    console.log(`El dom esta listo `)
+})
+
+
+window.addEventListener("load",  ()=>{
+    console.log(`Todos los elementos estan cargados`);
+}); 
+
+
+const productos = [{ id: 1,  nombre: "Gin", precio: 500 },
+{  id: 2,  nombre: "fernet", precio: 550 },
+{  id: 3,  nombre: "vodka"  , precio: 600},
+{  id: 4,  nombre: "ron" , precio: 550},
+{  id: 5,  nombre: "brahma"  , precio: 180},
+{  id: 6,  nombre: "corona"  , precio: 200},];
+
+for (const producto of productos) {
+    $("#btn").append(`<div><h3> ID: ${producto.id}</h3>
+    <p>  Producto: ${producto.nombre}</p>
+    <b> $ ${producto.precio}</b></div>`);
+}
+
+
+// onclick
+
+function myFunction() {
+    document.getElementById("btn1").innerHTML;
+    console.log("¡Has agregado un producto a tu compra!");
+}
