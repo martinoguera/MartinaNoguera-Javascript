@@ -121,4 +121,7 @@ $("#btn").on("click", () =>{
 /// Efecto en titulo h1
 $("h1").css("backgorund", "yellow")
     .slideUp(2000)
-    .slideDown(2000);
+    .slideDown(2000)
+    .delay(1000)
+    .slideUp(1000)
+    .slideDown(1000);
