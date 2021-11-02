@@ -86,18 +86,18 @@ window.addEventListener("load",  ()=>{
 }); 
 
 
-const productos = [{ id: 1,  nombre: "Gin", precio: 500 },
-{  id: 2,  nombre: "fernet", precio: 550 },
-{  id: 3,  nombre: "vodka"  , precio: 600},
-{  id: 4,  nombre: "ron" , precio: 550},
-{  id: 5,  nombre: "brahma"  , precio: 180},
-{  id: 6,  nombre: "corona"  , precio: 200},];
+// const productos = [{ id: 1,  nombre: "Gin", precio: 500 },
+// {  id: 2,  nombre: "fernet", precio: 550 },
+// {  id: 3,  nombre: "vodka"  , precio: 600},
+// {  id: 4,  nombre: "ron" , precio: 550},
+// {  id: 5,  nombre: "brahma"  , precio: 180},
+// {  id: 6,  nombre: "corona"  , precio: 200},];
 
-for (const producto of productos) {
-    $("#btn").append(`<div><h3> ID: ${producto.id}</h3>
-    <p>  Producto: ${producto.nombre}</p>
-    <b> $ ${producto.precio}</b></div>`);
-}
+// for (const producto of productos) {
+//     $("#btn").append(`<div><h3> ID: ${producto.id}</h3>
+//     <p>  Producto: ${producto.nombre}</p>
+//     <b> $ ${producto.precio}</b></div>`);
+// }
 
 
 // onclick
@@ -106,3 +106,19 @@ function myFunction() {
     document.getElementById("btn1").innerHTML;
     console.log("¡Has agregado un producto a tu compra!");
 }
+
+// JQUERY animaciones
+
+$("#btn").on("click", () =>{
+    $(".table").hide()
+})
+
+$("#btn").on("click", () =>{
+    $(".table").show()
+})
+
+
+/// Efecto en titulo h1
+$("h1").css("backgorund", "yellow")
+    .slideUp(2000)
+    .slideDown(2000);
