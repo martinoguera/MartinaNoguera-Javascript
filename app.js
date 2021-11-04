@@ -8,82 +8,82 @@
 // }
 
 
-class Productos {
+// class Productos {
 
-    constructor({
-        bebida,
-        cantidad,
-        precio, 
-        subtotal
-    }){
-        this.bebida = bebida;
-        this.cantidad = cantidad;
-        this.precio = precio;
-        this.subtotal = subtotal
-    }
-}
+//     constructor({
+//         bebida,
+//         cantidad,
+//         precio, 
+//         subtotal
+//     }){
+//         this.bebida = bebida;
+//         this.cantidad = cantidad;
+//         this.precio = precio;
+//         this.subtotal = subtotal
+//     }
+// }
 
-let listaBebidas = [];
+// let listaBebidas = [];
 
 
-const crearCarrito = () => {
+// const crearCarrito = () => {
 
-    const bebidas = new Productos({
-        bebida : document.getElementById("bebida"),
-        cantidad : document.getElementById("cantidad").value,
-        precio : document.getElementById("precio").value,
-        subtotal : document.getElementById("subtotal").value,
-    })
+//     const bebidas = new Productos({
+//         bebida : document.getElementById("bebida"),
+//         cantidad : document.getElementById("cantidad").value,
+//         precio : document.getElementById("precio").value,
+//         subtotal : document.getElementById("subtotal").value,
+//     })
 
-    console.log(bebidas)
+//     console.log(bebidas)
 
-    return bebidas
-}
+//     return bebidas
+// }
 
-const agregarBebida = (lista) => {
-    lista.push(crearCarrito)
-    return lista
-}
+// const agregarBebida = (lista) => {
+//     lista.push(crearCarrito)
+//     return lista
+// }
   
 
-const guardarEnBaseDeDatos = () =>{
+// const guardarEnBaseDeDatos = () =>{
 
-   listaBebidas = verificarStorage()
-    localStorage.setItem("listaBebidas", JSON.stringify(listaBebidas))
-}
+//    listaBebidas = verificarStorage()
+//     localStorage.setItem("listaBebidas", JSON.stringify(listaBebidas))
+// }
 
-const verificarStorage = () =>{
+// const verificarStorage = () =>{
 
-let dato;
+// let dato;
 
-    if(localStorage.getItem("listaBebidas") != null){
-        dato = agregarBebida(JSON.parse(localStorage.getItem("listaBebidas")))
-         return dato
-    }else{
-        agregarBebida(listaBebidas)
-        dato = listaBebidas
-        return dato
-    }
-}
+//     if(localStorage.getItem("listaBebidas") != null){
+//         dato = agregarBebida(JSON.parse(localStorage.getItem("listaBebidas")))
+//          return dato
+//     }else{
+//         agregarBebida(listaBebidas)
+//         dato = listaBebidas
+//         return dato
+//     }
+// }
 
-document.getElementById("btn").addEventListener("click", (e) => { e.preventDefault()
-    crearCarrito()
-    guardarEnBaseDeDatos()
+// document.getElementById("btn").addEventListener("click", (e) => { e.preventDefault()
+//     crearCarrito()
+//     guardarEnBaseDeDatos()
 
-})
+// })
 
 // imprimirDatos()
 
 // JQUERY
 
-$(() =>{
-    console.log(`El dom esta listo `)
-})
+// $(() =>{
+//     console.log(`El dom esta listo `)
+// })
 
 
-window.addEventListener("load",  ()=>{
-    console.log(`Todos los elementos estan cargados`);
-}); 
+// window.addEventListener("load",  ()=>{
+//     console.log(`Todos los elementos estan cargados`);
+// }); 
 
 
 // const productos = [{ id: 1,  nombre: "Gin", precio: 500 },
@@ -125,3 +125,38 @@ $("h1").css("backgorund", "yellow")
     .delay(1000)
     .slideUp(1000)
     .slideDown(1000);
+
+// AJAX
+
+let articulos = [];
+$.ajax({
+  url: "./datos.js",
+  dataType: "json",
+  success: (response) => {
+    cargarDatos(response, articulos);
+  },
+});
+var pedido = new Pedido();
+$("#cantidad").keypress(soloNumeros);
+$("#validar-edad").keypress(soloNumeros);
+
+$("#pedidos").on("click", function () {
+  let posicion = $("#customer").offset().top;
+  $("html, body").animate({ scrollTop: posicion }, 2000);
+});
+
+
+/// carrito
+
+const url = "./datos.js"
+console.log(url)
+
+$.get(url, (respuesta, estado) =>{
+    if(estado == "success"){
+        console.log(respuesta)
+
+        respuesta.forEach(element => {
+
+        });
+    }
+})

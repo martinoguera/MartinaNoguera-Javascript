@@ -16,70 +16,92 @@
 
     </header>
 
-    <nav>
-        <a href=""></a>
-    </nav>
-
-    <nav>
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="130" height="40" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-              </svg>
-        </div>
-        <div>
-            <nav class="navbar navbar-light bg-black">
-                <div class="container-fluid">
-                  <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                  </form>
-                </div>
-        </div>
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-              </svg>
-        </div>
-    </nav>
+<div class="zombies"></div>
+    
         
             <h1>DELIVERY DE BEBIDAS</h1>
+ 
+<div class="container-fluid">
+  <div class="row" id="bottles">
+    <div class="bottles col-sm col-md-6 col-xl-3">
+      <img src="./imagenes/gin.PNG" alt="" height="300px" width="300px">
+      <div class="descripcion">
+        <div class="nombreProducto">Gin 750cc</div>
+        <div class="precio">$500</div>
+        <button class="shop" onclick="seleccionarProducto">AGREGAR</button>
+      </div>
+    </div>
+  
+    <div class="bottles col-sm col-md-6 col-xl-3">
+      <img src="./imagenes/fernet.PNG" alt="" height="300px" width="300px">
+      <div class="descripcion">
+        <div class="nombreProducto">Fernet Branca 750cc</div>
+        <div class="precio">$500</div>
+        <button class="shop" onclick="seleccionarProducto">AGREGAR</button>
+      </div>
+    </div>
 
+    <div class="bottles col-sm col-md-6 col-xl-3">
+      <img src="./imagenes/vodka.png" alt="" height="300px" width="300px">
+      <div class="descripcion">
+        <div class="nombreProducto">Vodka Smirnof 750cc</div>
+        <div class="precio">$550</div>
+        <button class="shop" onclick="seleccionarProducto">AGREGAR</button>
+      </div>
+    </div>
 
-<!-- FOTOS BEBIDAS -->
-        <section class="bebidas">  
+    <div class="bottles col-sm col-md-6 col-xl-3">
+      <img src="./imagenes/bacardi.PNG" alt="" height="300px" width="300px">
+      <div class="descripcion">
+        <div class="nombreProducto">Ron Bacardi 750cc</div>
+        <div class="precio">$520</div>
+        <button class="shop" onclick="seleccionarProducto">AGREGAR</button>
+      </div>
+    </div>
 
-            <div class="bebidas1">
-                <div class="conteiner1">
-                <img src="./imagenes/vodka.png" alt="vodka" height="300px" width="300px">
-                <div class="conteiner2 vodka">
-                   <div class="titulo"> VODKA 750cc</div>
-                   <div class="precio"> $499</div>
-                   <button class="boton">AGREGAR</button>
-                </div>
-             </div>
-                
-             <img src="./imagenes/fernet.PNG" alt="vodka" height="300px" width="300px">
-             <div class="conteiner2 fernet">
-                <div class="titulo"> VODKA 750cc</div>
-                <div class="precio"> $499</div>
-                <button class="boton">AGREGAR</button>
-             </div>
-          </div>
+  </div>
+</div>
 
-            <div class="bebidas1">
-                <img src="./imagenes/brahma.PNG" alt="vodka" height="300px" width="300px">
-                <img src="./imagenes/corona.PNG" alt="vodka" height="300px" width="300px">
-                <img src="./imagenes/hein.PNG" alt="vodka" height="300px" width="300px">
+<div class="container-fluid">
+  <div class="row">
+    <div class="bottles col-sm col-md-6 col-xl-3">
+      <img src="./imagenes/corona.PNG" alt="" height="300px" width="300px">
+      <div class="descripcion">
+        <div class="nombreProducto">Cerveza Corona 1L</div>
+        <div class="precio">$200</div>
+        <button class="shop" onclick="seleccionarProducto">AGREGAR</button>
+      </div>
+    </div>
+  
+    <div class="bottles col-sm col-md-6 col-xl-3">
+      <img src="./imagenes/brahma.PNG" alt="" height="300px" width="300px">
+      <div class="descripcion">
+        <div class="nombreProducto">Cerveza Brahma 1L</div>
+        <div class="precio">$180</div>
+        <button class="shop" onclick="seleccionarProducto">AGREGAR</button>
+      </div>
+    </div>
 
-            </div>
-            <!-- <div class="bebidas1">
-                <img src="./imagenes/jager.PNG" alt="vodka" height="300px" width="300px">
-                <img src="./imagenes/gin.PNG" alt="vodka" height="300px" width="300px">
-                <img src="./imagenes/campari.JPG" alt="vodka" height="300px" width="300px">
+    <div class="bottles col-sm col-md-6 col-xl-3">
+      <img src="./imagenes/fernet.PNG" alt="" height="300px" width="300px">
+      <div class="descripcion">
+        <div class="nombreProducto">Mallibu 750cc</div>
+        <div class="precio">$500</div>
+        <button class="shop" onclick="seleccionarProducto">AGREGAR</button>
+      </div>
+    </div>
 
-            </div> -->
-        </section>
-
+    <div class="bottles col-sm col-md-6 col-xl-3">
+      <img src="./imagenes/jager.PNG" alt="" height="300px" width="300px">
+      <div class="descripcion">
+        <div class="nombreProducto">Fernet Branca 750cc</div>
+        <div class="precio">$500</div>
+        <button class="shop" onclick="seleccionarProducto">AGREGAR</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
 
         <!-- SECCION SUBTOTAL -->
         <section class="conteiner" id="agregar"> 
@@ -99,6 +121,8 @@
             <option value="4" id="4">Ron Bacardi 750cc</option>
             <option value="5" id="5">Cerveza Brahma 1L</option>
             <option value="6" id="6">Cerveza Corona 1L</option>
+            <option value="7" id="7">Cerveza Corona 1L</option>
+            <option value="8" id="8">Cerveza Corona 1L</option>
            
               </select>
             </div>
@@ -139,14 +163,17 @@
                  
                  <!-- BOTON AGREGAR -->
                  <div class="col-4" id="btn">
-                     <button id="btn1">AGREGAR</button>
+                     <button id="btn1" class="agregar-carrito">AGREGAR</button>
                      
                     </div>
                     
                 </form>
             </section>
 
-            <table class="table table-dark">
+
+            <!-- tabla de carrito -->
+            <div>
+            <table class="table table-dark" >
                 <thead>
                   <tr>
                     <th scope="col">#</th>
@@ -179,8 +206,9 @@
                   </tr>
                 </tbody>
               </table>
-
-            <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>      
+            </div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>   
+<script src="./datos.js"></script>   
 <script src="./app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
