@@ -1,0 +1,58 @@
+[{
+    "id": "1",
+    "nombre": "Gin Bombay Sapphire 750 cc",
+    "precio": 950,
+    "destacado": true,
+    "imagen": "./imagenes/gin.PNG"
+},
+{
+    "id": "2",
+    "nombre": "Fernet Branca 750 cc",
+    "precio": 650,
+    "destacado": true,
+    "imagen": "./imagenes/fernet.PNG"
+},
+{
+    "id": "3",
+    "nombre": "Vodka Smirnoff 750 cc",
+    "precio": 700,
+    "destacado": true,
+    "imagen": "./imagenes/vodka.PNG"
+},
+{
+    "id": "4",
+    "nombre": "Ron Bacardi 750 cc",
+    "precio": 625,
+    "destacado": true,
+    "imagen": "./imagenes/bacardi.PNG"
+},
+{
+    "id": "5",
+    "nombre": "Cerveza Corona 1L",
+    "precio": 200,
+    "destacado": true,
+    "imagen": "./imagenes/corona.PNG"
+},
+{
+    "id": "6",
+    "nombre": "Cerveza Brahama 1L",
+    "precio": 180,
+    "destacado": true,
+    "imagen": "./imagenes/brahma.PNG"
+},
+{
+    "id": "7",
+    "nombre": "Campari ",
+    "precio": 500,
+    "destacado": true,
+    "imagen": "./imagenes/campari.JPG"
+},
+{
+    "id": "8",
+    "nombre": "Jager",
+    "precio": 1300,
+    "destacado": true,
+    "imagen": "./imagenes/jager.PNG"
+}
+
+]
